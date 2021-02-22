@@ -74,7 +74,7 @@ return (
 
         {repositories.map(({full_name,owner,description})=>(
 
-        <Link key={full_name} to="/repository">
+        <Link key={full_name} to={`/repository/${full_name}`}>
         <img 
                 src={owner.avatar_url}
                 alt={owner.login}/>
